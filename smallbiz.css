@@ -1,0 +1,428 @@
+@charset "UTF-8";
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: baseline;
+/*box-sizing with support for firefox, webkit, opera, ie8*/
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: lightgray;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Document */
+
+.bold {
+	font-size: inherit;
+	font-weight: bolder;	
+}
+h1 {
+	font-size: 32px;
+	font-stretch: condensed;
+	font-weight: bolder;
+	text-align: center;
+	color: #000000;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bolder;
+	color: #000000;	
+}
+h3{
+	font-size: 19px;
+	font-weight: bolder;
+	color: #000000;	
+}
+#container {
+	width: 980px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+	box-shadow: 0px 3px 2px #000;
+}
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	/* padding: 10px; */
+}
+#search {
+	position: relative;
+	float: right;
+	margin-right: 15px;
+}
+#search input {
+	width: 200px;
+	height: 24px;
+	display: block;
+	background-image: url(images/mag.png);
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	border: 1px solid #7B7B7B;
+	border-radius: 2px;
+	padding-right: 20px;	
+	padding-left: 5px
+}
+#search input:hover {
+	border: 1px solid #b88400;	
+}
+#search input:focus {
+	border: 1px solid #C1C1C1;
+	outline: none !important;	
+}
+#logo {
+	width: 242px;
+	position: relative;
+	height: 95px;
+	margin-top: 15px;
+	margin-left: 10px;
+	background: url(images/bhive-logo.png) no-repeat 0 0;
+}
+nav {
+	position: relative;
+	clear: both;
+	float: right;
+	bottom: 3px;
+}
+nav a{
+	text-decoration: none;	
+}
+nav a:hover {
+	text-decoration: underline;
+	/* border-bottom: 1px solid #000000; */
+}
+.navlnk {
+	display: inline-block;	
+	text-decoration: none;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+button{
+	/* display: inline; */
+	background-color: #b88400;
+	bottom: 3px;
+	width: 115px;
+	height: 28px;
+	border-radius: 2px;
+	border: 1px solid #231f20;
+	margin-right: 15px;
+	margin-top: -10px;
+	text-align: center;
+	font-size: 13px;
+	font-weight:bolder;
+	color: #fff;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#file{
+	background: url(images/upload.png) 95% 50% no-repeat;
+	background-color: #b88400;
+	bottom: 3px;
+	padding-right:25px;
+	width: 115px;
+	height: 28px;
+	border-radius: 2px;
+	border: 1px solid #231f20;
+	margin-right: 15px;
+	margin-top: -10px;
+	text-align: center;
+	font-size: 13px;
+	font-weight:bolder;
+	color: #fff;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+button:hover{
+	box-shadow: 1px 2px #CDCDCD;
+}
+button:focus{
+	outline: none !important;	
+}
+#slogan {
+	clear: right;
+	font-size: 16px;
+	font-weight: bolder;
+	position: relative;
+	float: left;
+	margin-top: -20px;
+	margin-left: 63px;
+}
+#openimg {
+	clear: both;
+	position: relative;
+	width: 960px;
+	height: 340px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/openimg.jpg);
+	background-repeat: no-repeat;
+}
+#street {
+	position: relative;
+	float: right;
+	width: 302px;
+	height: 198px;
+	margin-top: -215px;
+	margin-right: 25px;
+	background-color: #DFDFDF;
+	border-radius: 2px;
+	border: 1px solid #000;
+	padding: 10px;
+}
+#street p {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+#street p strong {
+	margin-top: 5px;	
+}
+#fax {
+	font-size: 12px;	
+}
+#street button {
+	position: relative;
+	display: inline-block;
+	bottom: 25px;
+	float: right;
+	text-align: center}
+.opaqtitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	opacity: .75;
+	background-color: #fff;
+	z-index: 1;
+	padding: 5px;
+	text-align: center;
+}
+.linkimg {
+	position: relative;
+	display: inline-block;
+	width: 312px;
+	height: 220px;
+	margin-top: 11px;
+	margin-left: 11px;
+	/* border: 1px solid #000; */
+}
+.linkimg a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 1;
+}
+.linkimg a:hover {
+	box-shadow: 1px 1px 3px #b88400;	
+}
+#graphdesimg {
+	float: left;
+	background: url(images/graphdes.jpg) no-repeat 0 0;
+}
+#printcopyimg {
+	float: left;
+	background: url(images/copy.jpg) no-repeat 0 0;
+}
+#signsimg {
+	float: left;
+	background: url(images/banner.jpg) no-repeat 0 0;
+}
+#adspecimg {
+	clear: both;
+	float: left;
+	background: url(images/adspec.jpg) no-repeat 0 0;
+}
+#apparelimg {
+	float: left;
+	background: url(images/apparel.jpg) no-repeat 0 0;
+}
+#mailingimg {
+	float: left;
+	background: url(images/mailing.jpg) no-repeat 0 0;
+}
+.wht {
+	/* clear: both; */
+	position: relative;
+	float: left;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 11px;
+	width: 312px;
+	height: 260px;
+	padding: 5px;
+	color: #000;	
+}
+.wht h1{
+	padding-left: 15px;
+	text-align: left;
+}
+.wht p{
+	font-size: 12px;
+	font-weight:200;
+	margin-top: 3px;
+	text-indent: 15px;	
+}
+#market {
+	float: left;
+}
+#web {
+	float: left;
+}
+#social {
+	/* float: right; */
+	
+}
+#footinfo {
+	clear: both;
+	width: 100%;
+	height: 115px;
+	padding: 10px 25px;
+	background-color: #000;
+}
+#soclnks {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	width: 115px;
+	height: 30px;
+}
+.soc {
+	position: relative;
+}
+.soc a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 1;
+}
+.soc a:hover{
+	outline: 1px solid #fff;
+}
+#be {
+	margin-right: 7px;
+	background: url(images/behance.png) no-repeat 0 0;
+	position: relative;
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+#f {
+	margin-right: 7px;
+	background: url(images/fb.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	float: left;
+}
+#in {
+	background: url(images/lkin.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	float: left;
+}
+#ctrrevlogo {
+	/* clear:left; */
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/bhive-logo-rev.png) no-repeat 0 center;
+	width: 150px;
+	height: 58px;
+}
+#ctrsmalllnks {
+	margin: 15px auto 0 auto;
+	width: 215px;
+	color: #fff;
+	font-size: 11px;
+	clear: left;
+}
+#ctrsmalllnks ul li{
+	display: inline;
+}
+#ctrsmalllnks ul li a{
+	text-decoration: none;
+	color: #fff;	
+}
+#ctrsmalllnks ul li a:hover{
+	text-decoration: underline;
+	color: #fff
+	border-bottom: .75px solid #fff;
+}
+#addright {
+	position: relative;
+	float: right;
+	text-align: right;
+	margin-top: -65px;
+	font-size: 14px;
+	color: #fff;
+}
+footer {
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	opacity: .65;
+	font-size: 12px;
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+	padding: 7px;
+}
